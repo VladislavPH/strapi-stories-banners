@@ -31,6 +31,14 @@
     "isActive": {
       "type": "boolean",
       "default": true
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     }
   }
 }
