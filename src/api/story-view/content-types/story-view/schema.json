@@ -11,20 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "story_view"
-    },
     "story": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::story.story",
       "inversedBy": "story_view"
     },
-    "isViewed": {
-      "type": "boolean"
+    "TerminalId": {
+      "type": "string"
     }
   }
 }
