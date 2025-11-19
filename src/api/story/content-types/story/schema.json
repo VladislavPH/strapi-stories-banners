@@ -11,11 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "content": {
-      "type": "text"
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     },
     "image": {
       "type": "media",
@@ -25,20 +27,15 @@
         "files"
       ]
     },
-    "order": {
-      "type": "integer"
-    },
     "isActive": {
       "type": "boolean",
       "default": true
     },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files"
-      ]
+    "story_view": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::story-view.story-view",
+      "mappedBy": "story"
     }
   }
 }
