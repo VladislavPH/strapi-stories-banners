@@ -31,11 +31,8 @@
             "type": "boolean",
             "default": true
         },
-        "story_view": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::story-view.story-view",
-            "mappedBy": "story"
+        "TerminalId": {
+            "type": "json"
         }
     }
 }
