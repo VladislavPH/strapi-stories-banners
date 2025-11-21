@@ -78,7 +78,7 @@ export default factories.createCoreController('api::story.story', ({ strapi }) =
             fields: ['id', 'documentId'],
           },
         },
-        limit: Math.max(storyIds.length, storyDocumentIds.length) || undefined,
+        limit: undefined,
       }
     )) as Array<{
       documentId?: string | number | null
