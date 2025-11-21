@@ -30,7 +30,7 @@ export default factories.createCoreController('api::story.story', ({ strapi }) =
 
     const storyIds = stories.map((story) => story.id)
     const storyViews = (await strapi.entityService.findMany(
-      'api::story-view.story-view' as any,
+      'api::storyview.storyview' as any,
       {
         fields: ['id'],
         filters: {
