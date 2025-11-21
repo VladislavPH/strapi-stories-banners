@@ -31,8 +31,11 @@
             "type": "boolean",
             "default": true
         },
-        "TerminalId": {
-            "type": "json"
+        "story_views": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::storyview.storyview",
+            "mappedBy": "story"
         }
     }
 }
